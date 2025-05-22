@@ -1,0 +1,55 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.calculator-area {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
+}
+
+.calculator-screen {
+  display: flex;
+  width: calc(28% - 20px);
+  border-radius: 10px;
+  padding: 30px;
+  font-family: Tahoma;
+  font-weight: 700;
+  font-size: 50px;
+  background-color: rgb(219, 182, 192);
+  margin-bottom: 30px;
+}
+
+.calculator-button {
+  border-radius: 100%;
+  background-color: rgb(219, 182, 192);
+  box-shadow: 10px 0 0 0 rgb(168, 72, 97);
+}
+
+.spacer {
+  background-color: white;
+}
+
+.calculator-button,
+.spacer {
+  box-sizing: border-box;
+  width: calc(25% - 20px); /* 4 per row minus margin compensation */
+  height: 80px;
+  margin: 10px;
+  border: none;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.calculator-button:active {
+  box-sizing: border-box;
+  width: calc(25% - 20px);
+  height: 80px;
+  margin: 10px;
+  border: none;
+  transform: translateX(4px);
+  box-shadow: 5px 0 0 0 rgb(168, 72, 97);
+}
